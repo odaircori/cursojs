@@ -1,0 +1,1 @@
+console.log("Carregando via arquivo externo mesmo domínio");

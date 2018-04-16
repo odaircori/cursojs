@@ -1,0 +1,1 @@
+console.log("Carregando arquivo externo no diretório");
