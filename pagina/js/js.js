@@ -1,1 +1,1 @@
-console.log("Carregando arquivo externo no diretório");
+console.log("Teste GIT");
