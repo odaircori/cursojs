@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div ng-controller="listaComprasController">
+        <form class="form-inline" name="formItem">
+                <input type="text" ng-model="item.produto">
+                <input type="number" ng-model="item.quantidade">
+                <button ng-click="adicionaItem()">Adicionar Item</button>
+        </form>
+                    
+        <table>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in itens">
+                    <td>{{ item.produto }}</td>
+                    <td>{{ item.quantidade }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
